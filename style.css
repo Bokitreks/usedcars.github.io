@@ -1,0 +1,592 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Caladea', serif;
+}
+
+body #strela {
+  display: none;
+  position: fixed;
+  top: 94%;
+  left: 97%;
+  font-size: 2em;
+}
+
+@media (max-width: 485px) {
+  body #strela {
+    top: 94%;
+    left: 95%;
+  }
+}
+
+body #strela a {
+  color: indigo;
+}
+
+body #strela a:hover {
+  color: tomato;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body nav {
+  width: 100%;
+  background-color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav #naslov {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav #naslov a {
+  margin-left: 5%;
+  font-size: 2.5em;
+  color: indigo;
+}
+
+body nav #filteri {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1%;
+  width: 100%;
+}
+
+@media (max-width: 850px) {
+  body nav #filteri {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body nav #filteri #filter {
+  font-size: 2em;
+  margin: 5%;
+  color: indigo;
+}
+
+@media (max-width: 1411px) {
+  body nav #filteri #filter {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 850px) {
+  body nav #filteri #filter {
+    font-size: 2em;
+  }
+}
+
+body nav #filteri p {
+  font-size: 1.2em;
+  margin: 2%;
+  color: indigo;
+}
+
+@media (max-width: 1411px) {
+  body nav #filteri p {
+    font-size: 1em;
+  }
+}
+
+body #meni {
+  background-color: black;
+  z-index: 999;
+}
+
+@media (max-width: 485px) {
+  body #meni {
+    display: none;
+  }
+}
+
+body #meni #menii {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 60%;
+  margin: 0px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1%;
+  z-index: 999;
+}
+
+body #meni #menii li {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+body #meni #menii li a {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+body #glavni {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #glavni .automobil {
+  width: auto;
+  padding: 1%;
+  border: 1px solid black;
+  margin: 1%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #glavni .automobil .opisAutomobila {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #glavni .automobil .opisAutomobila .brTel {
+  text-decoration: none;
+  color: red;
+}
+
+body #tips {
+  width: 100%;
+  background-color: black;
+  text-align: justify;
+  padding: 2%;
+}
+
+@media (max-width: 850px) {
+  body #tips #tipara {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body #tips h4 {
+  color: white;
+  text-align: center;
+  padding: 2%;
+  font-size: 2.5em;
+  color: red;
+}
+
+body #tips p {
+  color: white;
+  font-size: 1.2em;
+}
+
+@media (max-width: 485px) {
+  body #tips p {
+    font-size: 1.1em;
+  }
+}
+
+body #tips p #cash {
+  color: green;
+}
+
+body #tips p #rep {
+  color: yellow;
+}
+
+body #tips #tipss {
+  text-align: center;
+  padding-top: 3%;
+}
+
+body #tips #tipss .m {
+  font-size: 1.5em;
+}
+
+body #tips #tipss .listat {
+  color: white;
+  list-style: none;
+}
+
+body #tips #tipsss {
+  text-align: center;
+  padding-top: 3%;
+}
+
+body #tips #tipsss .m {
+  font-size: 1.5em;
+}
+
+body #tips #tipsss .listat {
+  color: white;
+  list-style: none;
+}
+
+body #tips #prikazT {
+  padding: 5%;
+  color: tomato;
+  text-align: center;
+}
+
+body #tips #skriveniT {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5%;
+  margin-top: 2%;
+}
+
+@media (max-width: 850px) {
+  body #tips #skriveniT {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body #tips #skriveniT #desnis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #services {
+  margin-top: 5%;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 5%;
+}
+
+body #services #naslovs {
+  color: white;
+  text-align: center;
+  padding: 2%;
+  font-size: 2.5em;
+  color: black;
+}
+
+body #services #divs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #services #divs #prvi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #services #divs #prvi p {
+  text-align: center;
+  font-size: 2em;
+}
+
+body #services #divs #prvi #tabela {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 1.1em;
+  width: 100%;
+}
+
+@media (max-width: 850px) {
+  body #services #divs #prvi #tabela {
+    width: auto;
+  }
+}
+
+body #services #divs #prvi #tabela tr td {
+  padding: 1%;
+}
+
+body #services #divs #drugi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+}
+
+body #services #divs #drugi #slajder {
+  width: 80%;
+  margin-left: 15%;
+}
+
+@media (max-width: 485px) {
+  body #services #divs #drugi #slajder {
+    width: 100%;
+  }
+}
+
+body #services #divs #drugi #slajder #slajderr {
+  border: 3px solid black;
+}
+
+body #contact {
+  background-image: url("images/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5%;
+}
+
+body #contact #naslovc {
+  color: white;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 2.5em;
+  color: black;
+}
+
+body form {
+  margin: 0px auto;
+  width: 80%;
+}
+
+body form .redf {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body form #poslednji {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body form #poslednjii {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #about {
+  padding: 5%;
+}
+
+body #about .jobPic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #about #aboutn {
+  text-align: center;
+}
+
+body #about .atext {
+  font-size: 1.2em;
+  padding-top: 5%;
+}
+
+body #about .socialAb {
+  text-align: center;
+  margin-top: 5%;
+}
+
+body #about .socialAb a {
+  padding: 5%;
+  font-size: 1.8em;
+}
+
+body footer {
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer div {
+  color: white;
+  padding: 1%;
+}
+
+body footer #fnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 1233px) {
+  body footer #fnav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body footer #fnav ul {
+  list-style: none;
+}
+
+body footer #fnav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+body footer #fuse {
+  text-align: center;
+}
+
+body #oBurger {
+  width: 100%;
+  padding: 2%;
+  display: none;
+  position: fixed;
+  z-index: 999;
+}
+
+@media (max-width: 485px) {
+  body #oBurger {
+    display: block;
+  }
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+.aktivan {
+  color: red;
+}
+
+.greska {
+  border: 2px solid red;
+}
+
+#rMark {
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 1%;
+  z-index: 997;
+}
+
+#rMark a {
+  text-decoration: none;
+  color: red;
+}
+
+#burger {
+  display: none;
+  position: fixed;
+  width: 40%;
+  height: 100%;
+  background-color: black;
+  text-align: center;
+  z-index: 998;
+}
+
+#burger ul {
+  margin-top: 20%;
+}
+
+#burger ul li {
+  padding: 5%;
+}
+
+#burger ul li a {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

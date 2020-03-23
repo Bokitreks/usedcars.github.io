@@ -1,0 +1,532 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Caladea', serif;
+}
+
+$prvi:1411px;
+$drugi:1233px;
+$treci:850px;
+$cetvrti:485px;
+
+
+
+@mixin prvi{
+    @media(max-width:#{$prvi}){
+        @content;
+    }
+}
+@mixin drugi{
+    @media(max-width:#{$drugi}){
+        @content;
+    }
+}
+@mixin treci{
+    @media(max-width:#{$treci}){
+        @content;
+    }
+}
+@mixin cetvrti{
+    @media(max-width:#{$cetvrti}){
+        @content;
+    }
+}
+
+
+
+
+
+body{
+    #strela{
+        display: none;
+        position: fixed;
+        top:94%;
+        left:97%;
+        font-size: 2em;
+
+        @include cetvrti{
+            top: 94%;
+            left: 95%;
+        }
+        
+        a{
+            color: indigo;
+            
+
+            &:hover{
+                color: tomato;
+                transition: 1s;
+            }
+        }
+    }
+    nav{
+        width: 100%;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    
+
+        #naslov{
+            display: flex;
+            padding: 2%;
+            align-items: center;
+            
+
+            
+            a{
+                margin-left: 5%;
+                font-size: 2.5em;
+                color: indigo;
+            }
+           
+        }
+
+        #filteri{
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1%;
+            width: 100%;
+
+            @include treci{
+                flex-direction: column;
+            }
+          
+           
+           
+
+            #filter{
+                font-size: 2em;
+                margin:5%;
+                color: indigo;
+
+                @include prvi{
+                    font-size: 1.5em;
+                }
+                @include treci{
+                    font-size: 2em;
+                }
+            }
+            
+
+            p{
+                font-size: 1.2em;
+                margin:2%;
+                color: indigo;
+
+                @include prvi{
+                    font-size: 1em;
+                }
+            }
+            
+         
+
+            
+        }
+    }
+
+
+    #meni{
+      background-color: black;
+      z-index: 999;
+
+      @include cetvrti{
+          display: none;
+      }
+        #menii{
+            display: flex;
+            list-style: none;
+            width: 60%;
+            margin: 0px auto;
+            justify-content: center;
+            padding: 1%;
+            z-index: 999;
+            
+
+            li{
+               margin-left: 3%;
+               margin-right: 3%;
+
+                a{
+                    font-size: 1.3em;
+                    text-decoration: none;
+                    color: whitesmoke;
+                    
+                }
+            }
+        }
+    }
+
+    #glavni{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+        align-items: center;
+        justify-content: center;
+     
+        
+
+        .automobil{
+            width: auto;
+            padding: 1%;
+            border: 1px solid black;
+            margin: 1%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+.opisAutomobila{
+    display: flex;
+    justify-content: space-around;
+
+    .brTel{
+        text-decoration: none;
+        color:red;
+    }
+}
+
+        }
+
+    }
+
+    #tips{
+        width: 100%;
+        background-color: black;
+        text-align: justify;
+        padding: 2%;
+
+        #tipara{
+            @include treci{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        h4{
+            color:white;
+            text-align: center;
+            padding: 2%;
+            font-size: 2.5em;
+            color: red;
+        }
+        p{
+            color: white;
+            font-size: 1.2em;
+
+
+            @include cetvrti{
+                font-size: 1.1em;
+            }
+
+            #cash{
+                color:green;
+            }
+            #rep{
+                color:yellow;
+            }
+        }
+
+        #tipss{
+            text-align: center;
+            padding-top: 3%;
+
+            .m{
+                font-size: 1.5em;
+            }
+
+            .listat{
+                color: white;
+                list-style: none;
+            }
+        }
+        #tipsss{
+            text-align: center;
+            padding-top: 3%;
+
+            .m{
+                font-size: 1.5em;
+            }
+
+            .listat{
+                color: white;
+                list-style: none;
+            }
+        }
+        #prikazT{
+            padding: 5%;
+            color: tomato;
+            text-align: center;
+        }
+
+        #skriveniT{
+            display: flex;
+            padding: 5%;
+            margin-top: 2%;
+
+            @include treci{
+                display: flex;
+                flex-direction: column;
+            }
+            #desnis{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    #services{
+        
+        margin-top: 5%;
+        border-top: 4px solid black;
+        border-bottom: 4px solid black;
+        padding: 5%;
+        #naslovs{
+            color:white;
+            text-align: center;
+            padding: 2%;
+            font-size: 2.5em;
+            color: black;
+
+        }
+
+        #divs{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+#prvi{
+    
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+        
+
+    p{
+        text-align: center;
+        font-size: 2em;
+    }
+    #tabela{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.1em;
+        width: 100%;
+
+
+
+        @include treci{
+            width: auto;
+        }
+
+        
+        tr{
+           
+            td{
+             padding: 1%;
+            }
+        }
+    }
+}
+
+#drugi{
+    display: flex;
+    align-items: center;
+    padding: 5%;
+
+    #slajder{
+        width: 80%;
+margin-left: 15%;
+@include cetvrti{
+    width:100%;
+}
+       #slajderr{
+        border: 3px solid black;
+
+        
+       }
+    }
+}
+        
+
+    }
+
+}
+
+#contact{
+
+    background-image: url("images/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5%;
+ 
+    #naslovc{
+        color:white;
+            text-align: center;
+            padding-top: 5%;
+            font-size: 2.5em;
+            color: black;
+    }
+
+
+
+    
+}
+
+form{
+    margin:0px auto;
+    width: 80%;
+    
+
+    .redf{
+    
+        justify-content: center;
+      
+    }
+    #poslednji{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #poslednjii{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#about{
+
+    padding: 5%;
+
+    .jobPic{
+        display: flex;
+        justify-content: center;
+    }
+#aboutn{
+    text-align: center;
+}
+.atext{
+    font-size: 1.2em;
+    padding-top: 5%;
+}
+.socialAb{
+    text-align: center;
+    margin-top: 5%;
+    a{
+        padding: 5%;
+        font-size: 1.8em;
+    }
+}
+
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    
+
+    div{
+        color:white;
+        padding: 1%;
+    }
+
+    #fnav{
+        display: flex;
+        flex-direction: column;
+
+        @include drugi{
+            align-items: center;
+        }
+
+        
+        ul{
+    list-style: none;
+        li{
+
+        
+        a{
+            color: white;
+            text-decoration: none;
+
+        }
+    }
+
+    }
+        
+    }
+
+    #fuse{
+        text-align: center;
+    }
+}
+
+
+#oBurger{
+    width: 100%;
+    padding: 2%;
+    display: none;
+    position: fixed;
+    z-index: 999;
+
+    @include cetvrti{
+        display: block;
+    }
+}
+    
+}
+
+.fixed-nav{
+    position: fixed;
+    top:0;
+    background-color: white;
+}
+.aktivan{
+    color:red;
+}
+
+.greska{
+    border: 2px solid red;
+}
+#rMark{
+    position: fixed;
+    display: none;
+    top:50%;
+    left: 1%;
+    z-index: 997;
+
+    a{
+        text-decoration: none;
+        color: red;
+    }
+}
+
+#burger{
+    display: none;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    text-align: center;
+    z-index: 998;
+
+    ul{
+
+    margin-top:20%;
+    li{
+
+        padding: 5%;
+    
+    a{
+        color: white;
+        
+        
+    }
+}
+
+    }
+}

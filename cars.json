@@ -1,0 +1,317 @@
+[
+    {
+        "id":1,
+        "idb":1,
+        "idk":2,
+        "brand":"Audi",
+        "type":"sedan",
+        "price":15000,
+
+        "image":{
+            "src":"images/audia4b.jpg",
+            "alt":"Audi image"
+        },
+
+        "specs":{
+            "model":"A4",
+            "crossed":"180.000km",
+            "engine":"2.0 TDI",
+            "horsepower":"140hp"
+        },
+        "owner":{
+            "name":"Bojan",
+            "location":"Belgrade",
+            "number":"064/0123456"
+        }
+        
+    },
+    {
+        "id":2,
+        "idb":3,
+        "idk":3,
+        "brand":"Citroen",
+        "type":"hatchback",
+        "price": 1600,
+
+        "image":{
+            "src":"images/xsarad.jpg",
+            "alt":"Xsara image"
+        },
+
+        "specs":{
+            "model":"Xsara-Picaso",
+            "crossed":"140.000km",
+            "engine":"1.6 Benz",
+            "horsepower":"96hp"
+        },
+        "owner":{
+            "name":"Jovan",
+            "location":"Belgrade",
+            "number":"060/6543210"
+        }
+        
+    },
+    {
+        "id":3,
+        "idb":2,
+        "idk":2,
+        "brand":"Bmw",
+        "type":"sedan",
+        "price":12000,
+
+        "image":{
+            "src":"images/bmw3b.jpg",
+            "alt":"Bmw image"
+        },
+
+        "specs":{
+            "model":"Series 3",
+            "crossed":"175.000km",
+            "engine":"1.8 Benz",
+            "horsepower":"150hp"
+        },
+        "owner":{
+            "name":"Aleksa",
+            "location":"Belgrade",
+            "number":"064/6548210"
+        }
+        
+    },
+    {
+        "id":4,
+        "idb":3,
+        "idk":3,
+        "brand":"Citroen",
+        "type":"hatchback",
+        "price":6000,
+
+        "image":{
+            "src":"images/c4kaktus.jpg",
+            "alt":"Kaktus image"
+        },
+
+        "specs":{
+            "model":"C4",
+            "crossed":"65.000km",
+            "engine":"1.6 HDI",
+            "horsepower":"110hp"
+        },
+        "owner":{
+            "name":"Nikola",
+            "location":"Novi Sad",
+            "number":"063/8657421"
+        }
+        
+    },
+    {
+        "id":5,
+        "idb":4,
+        "idk":3,
+        "brand":"Fiat",
+        "type":"hatchback",
+        "price":2000,
+
+        "image":{
+            "src":"images/punto.jpg",
+            "alt":"Punto image"
+        },
+
+        "specs":{
+            "model":"Punto",
+            "crossed":"66.000km",
+            "engine":"1.2 benz",
+            "horsepower":"60hp"
+        },
+        "owner":{
+            "name":"Nenad",
+            "location":"Novi Sad",
+            "number":"061/8655521"
+        }
+        
+    },
+    {
+        "id":6,
+        "idb":4,
+        "idk":2,
+        "brand":"Fiat",
+        "type":"sedan",
+        "price":7000,
+
+        "image":{
+            "src":"images/tipo.jpg",
+            "alt":"Tipo image"
+        },
+
+        "specs":{
+            "model":"Tipo",
+            "crossed":"20.000km",
+            "engine":"1.4 benz",
+            "horsepower":"80hp"
+        },
+        "owner":{
+            "name":"Petar",
+            "location":"Nis",
+            "number":"065/8655521"
+        }
+        
+    },
+    {
+        "id":7,
+        "idb":1,
+        "idk":1,
+        "brand":"Audi",
+        "type":"avant",
+        "price":25000,
+
+        "image":{
+            "src":"images/audia7.jpg",
+            "alt":"Audi image"
+        },
+
+        "specs":{
+            "model":"A7",
+            "crossed":"77.000km",
+            "engine":"3.0 TDI",
+            "horsepower":"170hp"
+        },
+        "owner":{
+            "name":"Aleksandar",
+            "location":"Beograd",
+            "number":"066/8665522"
+        }
+        
+    },
+    {
+        "id":8,
+        "idb":1,
+        "idk":1,
+        "brand":"Audi",
+        "type":"avant",
+        "price":27000,
+
+        "image":{
+            "src":"images/audirs6.jpg",
+            "alt":"Audirs image"
+        },
+
+        "specs":{
+            "model":"Rs6",
+            "crossed":"12.000km",
+            "engine":"2.0 TFSI",
+            "horsepower":"200hp"
+        },
+        "owner":{
+            "name":"Viktor",
+            "location":"Beograd",
+            "number":"065/8655521"
+        }
+        
+    },
+    {
+        "id":9,
+        "idb":6,
+        "idk":3,
+        "brand":"Volkswagen",
+        "type":"hatchback",
+        "price":800,
+
+        "image":{
+            "src":"images/cvaja.jpg",
+            "alt":"Cvaja image"
+        },
+
+        "specs":{
+            "model":"Golf 2",
+            "crossed":"220.000km",
+            "engine":"1.8 TFSI",
+            "horsepower":"190hp"
+        },
+        "owner":{
+            "name":"Lazar",
+            "location":"Kragujevac",
+            "number":"063/1115521"
+        }
+        
+    },
+    {
+        "id":10,
+        "idb":6,
+        "idk":1,
+        "brand":"Volkswagen",
+        "type":"avant",
+        "price":4800,
+
+        "image":{
+            "src":"images/passat.jpg",
+            "alt":"Passat image"
+        },
+
+        "specs":{
+            "model":"Passat (b6)",
+            "crossed":"250.000km",
+            "engine":"2.0 TDI",
+            "horsepower":"140hp"
+        },
+        "owner":{
+            "name":"Vlada",
+            "location":"Subotica",
+            "number":"062/1445521"
+        }
+        
+    },
+    {
+        "id":11,
+        "idb":5,
+        "idk":2,
+        "brand":"Mercedes",
+        "type":"sedan",
+        "price":58000,
+
+        "image":{
+            "src":"images/mercedesc.jpg",
+            "alt":"Mercedes image"
+        },
+
+        "specs":{
+            "model":"C class",
+            "crossed":"10km",
+            "engine":"3.0 TDI",
+            "horsepower":"170hp"
+        },
+        "owner":{
+            "name":"Marko",
+            "location":"Beograd",
+            "number":"060/1445521"
+        }
+        
+    },
+    {
+        "id":12,
+        "idb":5,
+        "idk":4,
+        "brand":"Mercedes",
+        "type":"SUV",
+        "price":75000,
+
+        "image":{
+            "src":"images/gclass.jpg",
+            "alt":"Mercedesg image"
+        },
+
+        "specs":{
+            "model":"G class",
+            "crossed":"1200km",
+            "engine":"5.0 TDI",
+            "horsepower":"320hp"
+        },
+        "owner":{
+            "name":"Bogdan",
+            "location":"Beograd",
+            "number":"060/0055521"
+        }
+        
+    }
+    
+    
+
+]
