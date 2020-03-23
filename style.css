@@ -19,10 +19,6 @@ body #strela {
   }
 }
 
-body #strela a {
-  color: indigo;
-}
-
 body #strela a:hover {
   color: tomato;
   -webkit-transition: 1s;
@@ -190,6 +186,8 @@ body #glavni .automobil {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-shadow: 5px 5px black;
+          box-shadow: 5px 5px black;
 }
 
 body #glavni .automobil .opisAutomobila {
