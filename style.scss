@@ -65,19 +65,25 @@ body{
     display: flex;
     padding: 0px;
     justify-content: space-between;
-    
+    background-image: url("images/wall.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    color:white;
 
         #naslov{
             display: flex;
             padding: 2%;
             align-items: center;
             
+            
 
             
             a{
                 margin-left: 5%;
                 font-size: 2.5em;
-                color: indigo;
+                text-decoration: none;
+                color:white;
             }
            
         }
@@ -88,6 +94,7 @@ body{
             flex-wrap: wrap;
             padding: 1%;
             width: 100%;
+            
 
             @include treci{
                 flex-direction: column;
@@ -99,7 +106,7 @@ body{
             #filter{
                 font-size: 2em;
                 margin:5%;
-                color: indigo;
+                color:white;
 
                 @include prvi{
                     font-size: 1.5em;
@@ -113,7 +120,7 @@ body{
             p{
                 font-size: 1.2em;
                 margin:2%;
-                color: indigo;
+                color:white;
 
                 @include prvi{
                     font-size: 1em;

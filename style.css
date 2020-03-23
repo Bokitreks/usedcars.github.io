@@ -39,6 +39,11 @@ body nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-image: url("images/wall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
 }
 
 body nav #naslov {
@@ -54,7 +59,8 @@ body nav #naslov {
 body nav #naslov a {
   margin-left: 5%;
   font-size: 2.5em;
-  color: indigo;
+  text-decoration: none;
+  color: white;
 }
 
 body nav #filteri {
@@ -82,7 +88,7 @@ body nav #filteri {
 body nav #filteri #filter {
   font-size: 2em;
   margin: 5%;
-  color: indigo;
+  color: white;
 }
 
 @media (max-width: 1411px) {
@@ -100,7 +106,7 @@ body nav #filteri #filter {
 body nav #filteri p {
   font-size: 1.2em;
   margin: 2%;
-  color: indigo;
+  color: white;
 }
 
 @media (max-width: 1411px) {
