@@ -323,6 +323,9 @@ function ispisiAutomobile(data){
 
             var favCars=localStorage.getItem("favs");
             var favCarsId=[];
+            if(favCars!=null){
+
+            
             for(var f=0;f<favCars.length;f++){
 
         if(f%2==0){
@@ -331,7 +334,13 @@ function ispisiAutomobile(data){
         }else{
             console.log("zarez");
         }
-    }       
+            
+    }       } 
+    
+    else{
+        localStorage.setItem("favs",0);
+    }
+          
 
 
     var f=document.getElementsByClassName("fav");
