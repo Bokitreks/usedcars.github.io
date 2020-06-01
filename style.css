@@ -575,6 +575,13 @@ body #oBurger {
 #rMark a {
   text-decoration: none;
   color: red;
+  font-size: 1.3em;
+}
+
+@media (max-width: 485px) {
+  #rMark a {
+    font-size: 1em;
+  }
 }
 
 #burger {

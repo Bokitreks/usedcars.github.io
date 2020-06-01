@@ -6,6 +6,7 @@
         "brand":"Audi",
         "type":"sedan",
         "price":15000,
+        "year":2015,
 
         "image":{
             "src":"images/audia4b.jpg",
@@ -32,6 +33,7 @@
         "brand":"Citroen",
         "type":"hatchback",
         "price": 1600,
+        "year":2004,
 
         "image":{
             "src":"images/xsarad.jpg",
@@ -58,6 +60,7 @@
         "brand":"Bmw",
         "type":"sedan",
         "price":12000,
+        "year":2013,
 
         "image":{
             "src":"images/bmw3b.jpg",
@@ -84,6 +87,7 @@
         "brand":"Citroen",
         "type":"hatchback",
         "price":6000,
+        "year":2008,
 
         "image":{
             "src":"images/c4kaktus.jpg",
@@ -110,6 +114,7 @@
         "brand":"Fiat",
         "type":"hatchback",
         "price":2000,
+        "year":2003,
 
         "image":{
             "src":"images/punto.jpg",
@@ -136,6 +141,7 @@
         "brand":"Fiat",
         "type":"sedan",
         "price":7000,
+        "year":2012,
 
         "image":{
             "src":"images/tipo.jpg",
@@ -162,6 +168,7 @@
         "brand":"Audi",
         "type":"avant",
         "price":25000,
+        "year":2019,
 
         "image":{
             "src":"images/audia7.jpg",
@@ -188,6 +195,7 @@
         "brand":"Audi",
         "type":"avant",
         "price":27000,
+        "year":2020,
 
         "image":{
             "src":"images/audirs6.jpg",
@@ -214,6 +222,7 @@
         "brand":"Volkswagen",
         "type":"hatchback",
         "price":800,
+        "year":1980,
 
         "image":{
             "src":"images/cvaja.jpg",
@@ -240,6 +249,7 @@
         "brand":"Volkswagen",
         "type":"avant",
         "price":4800,
+        "year":2007,
 
         "image":{
             "src":"images/passat.jpg",
@@ -266,6 +276,7 @@
         "brand":"Mercedes",
         "type":"sedan",
         "price":58000,
+        "year":2017,
 
         "image":{
             "src":"images/mercedesc.jpg",
@@ -292,6 +303,7 @@
         "brand":"Mercedes",
         "type":"SUV",
         "price":75000,
+        "year":2016,
 
         "image":{
             "src":"images/gclass.jpg",

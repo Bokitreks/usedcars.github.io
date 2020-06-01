@@ -515,6 +515,12 @@ footer{
     a{
         text-decoration: none;
         color: red;
+        font-size:1.3em;
+
+
+        @include cetvrti{
+            font-size: 1em;
+        }
     }
 }
 

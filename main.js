@@ -239,6 +239,17 @@ document.getElementById("meni").innerHTML=meni;
 
 
 
+var godSel1=document.getElementById("godiste1");
+var godSel2=document.getElementById("godiste2");
+
+for(var i=1980;i<=2020;i++){
+    godSel1.innerHTML+="<option value='"+i+"'>" + ">" + i + "</option>";
+    godSel2.innerHTML+="<option value='"+i+"'>" + "<" + i + "</option>";
+}
+
+document.getElementById("godiste1").addEventListener('change',filterMeSortMe);
+document.getElementById("godiste2").addEventListener('change',filterMeSortMe);
+
 
 
   
@@ -258,6 +269,7 @@ function ispisiAutomobile(data){
        <li class="opisAuta">Model : ${auto.specs.model}</li>
        <li class="opisAuta">Type : ${auto.type}</li>
        <li class="opisAuta">Price: ${auto.price}&euro;</li>
+       <li class="opisAuta">Year: ${auto.year}</li>
        
      </ul>
      <ul class="owner "container-fluid"">
@@ -439,7 +451,10 @@ function filterMeSortMe(){
     var tip = document.getElementById('karoserije').value;
 
     var sorted = document.getElementById('cene').value;
+    
+    var god1=document.getElementById("godiste1").value;
 
+    var god2=document.getElementById("godiste2").value;
 
     localStorage.setItem("brand",brend);
     localStorage.setItem("tipe",tip);
@@ -530,7 +545,12 @@ function filterMeSortMe(){
 
                     }
                     
-                    ispisiAutomobile(tipoviNiz);
+                    if(god1==0 && god2==0){
+                        
+                        ispisiAutomobile(tipoviNiz);
+                    }else{
+                        filtrirajGodiste(tipoviNiz);
+                    }
 
                 }
 
@@ -591,7 +611,12 @@ function filterMeSortMe(){
                                 })
                         }
 
-                        ispisiAutomobile(brandNizAkoJeTipNizNula);
+                        if(god1==0 && god2==0){
+                            
+                            ispisiAutomobile(brandNizAkoJeTipNizNula);
+                        }else{
+                            filtrirajGodiste(brandNizAkoJeTipNizNula);
+                        }
 
                     }
 
@@ -640,7 +665,12 @@ function filterMeSortMe(){
                                         })
                                 }
 
-                        ispisiAutomobile(nizBrendova);
+                                if(god1==0 && god2==0){
+                                    
+                                    ispisiAutomobile(nizBrendova);
+                                }else{
+                                    filtrirajGodiste(nizBrendova);
+                                }
 
                     }
 
@@ -701,7 +731,13 @@ function filterMeSortMe(){
                         })
                 }
 
+                if(god1==0 && god2==0){
+                   
                     ispisiAutomobile(tipoviAkoNemaBrenda);
+                }else{
+                    
+                    filtrirajGodiste(tipoviAkoNemaBrenda);
+                }
 
                 }
 
@@ -749,8 +785,13 @@ function filterMeSortMe(){
 
                         })
                 }
-
-                ispisiAutomobile(data);
+                
+                if(god1==0 && god2==0){
+                    ispisiAutomobile(data);
+                }else{
+                    filtrirajGodiste(data);
+                }
+                
 
                 }
 
@@ -784,6 +825,31 @@ fnav.innerHTML+=ispisfl;
 snav.innerHTML+=ispisfl;
 
 
+function filtrirajGodiste(data){
+    
+    console.log(data);
+    
+    var god1=document.getElementById("godiste1").value;
+
+    var god2=document.getElementById("godiste2").value;
+
+
+    if(god1!=0 && god2==0){
+        data=data.filter(f=>f.year>=god1);
+        ispisiAutomobile(data);
+    }else if(god2!=0 && god1==0){
+        data=data.filter(f=>f.year<=god2);
+        ispisiAutomobile(data);
+    }else if(god2!=0 && god1!=0){
+        data=data.filter(f=>f.year>=god1 && f.year<=god2);
+        ispisiAutomobile(data);
+    }else{
+        ispisiAutomobile(data);
+    }
+
+    
+
+}
 
 
 
