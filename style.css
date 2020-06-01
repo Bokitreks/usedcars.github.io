@@ -575,6 +575,7 @@ body #oBurger {
 #rMark a {
   text-decoration: none;
   color: red;
+  font-size:1.2em;
 }
 
 #burger {
