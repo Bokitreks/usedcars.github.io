@@ -242,7 +242,7 @@ document.getElementById("meni").innerHTML=meni;
 var godSel1=document.getElementById("godiste1");
 var godSel2=document.getElementById("godiste2");
 
-for(var i=1980;i<=2020;i++){
+for(var i=1970;i<=2020;i++){
     godSel1.innerHTML+="<option value='"+i+"'>" + ">" + i + "</option>";
     godSel2.innerHTML+="<option value='"+i+"'>" + "<" + i + "</option>";
 }
@@ -835,13 +835,13 @@ function filtrirajGodiste(data){
 
 
     if(god1!=0 && god2==0){
-        data=data.filter(f=>f.year>=god1);
+        data=data.filter(f=>f.year>god1);
         ispisiAutomobile(data);
     }else if(god2!=0 && god1==0){
-        data=data.filter(f=>f.year<=god2);
+        data=data.filter(f=>f.year<god2);
         ispisiAutomobile(data);
     }else if(god2!=0 && god1!=0){
-        data=data.filter(f=>f.year>=god1 && f.year<=god2);
+        data=data.filter(f=>f.year>god1 && f.year<god2);
         ispisiAutomobile(data);
     }else{
         ispisiAutomobile(data);
